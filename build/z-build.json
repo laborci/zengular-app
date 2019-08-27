@@ -1,0 +1,41 @@
+{
+	"buildVersionFile": "./build-version",
+	"googlefonts": {
+		"src": [
+			"../@dev/css/google-fonts.json"
+		],
+		"dest": "../public/fonts/",
+		"path": "/fonts/"
+	},
+	"copy": [
+		{
+			"src": "./node_modules/@fortawesome/fontawesome-pro/webfonts/",
+			"pattern": "*",
+			"dest": "../public/fonts/fontawesome/"
+		},
+		{
+			"src": "../@dev/assets/",
+			"pattern": "**",
+			"dest": "../public/",
+			"watch": true
+		},
+		{
+			"src": "../@dev/",
+			"pattern": "index.html",
+			"dest": "../public/",
+			"watch": true
+		}
+	],
+	"css": [
+		{
+			"src": "../@dev/css/",
+			"dest": "../public/css/"
+		}
+	],
+	"js": [
+		{
+			"src": "../@dev/js/",
+			"dest": "../public/js/"
+		}
+	]
+}

@@ -1,6 +1,6 @@
 let {series, parallel, watch, src, dest} = require('gulp');
 
-let buildConfig = require('z-build').ConfigReader.load('./package.json');
+let buildConfig = require('z-build').ConfigReader.load('./z-build.json');
 let VersionBump = require('z-build').VersionBump;
 
 let prefixer = require('gulp-autoprefixer');
