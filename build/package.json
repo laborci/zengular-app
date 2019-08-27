@@ -1,54 +1,9 @@
 {
 	"name": "zengular-app",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
 	"author": "Gergely Laborci",
-	"license": "ISC",
 	"scripts": {
 		"build": "webpack --progress --colors --mode production",
 		"work": "webpack --progress --colors --watch  --mode development"
-	},
-	"zengular-build": {
-		"buildVersionFile": "./build-version",
-		"googlefonts": {
-			"src": [
-				"../@dev/css/google-fonts.json"
-			],
-			"dest": "../public/fonts/",
-			"path": "/fonts/"
-		},
-		"copy": [
-			{
-				"src": "./node_modules/@fortawesome/fontawesome-pro/webfonts/",
-				"pattern": "*",
-				"dest": "../public/fonts/fontawesome/"
-			},
-			{
-				"src": "../@dev/assets/",
-				"pattern": "**",
-				"dest": "../public/",
-				"watch": true
-			},
-			{
-				"src": "../@dev/",
-				"pattern": "index.html",
-				"dest": "../public/",
-				"watch": true
-			}
-		],
-		"css": [
-			{
-				"src": "../@dev/css/",
-				"dest": "../public/css/"
-			}
-		],
-		"js": [
-			{
-				"src": "../@dev/js/",
-				"dest": "../public/js/"
-			}
-		]
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-pro": "^5.9.0",
