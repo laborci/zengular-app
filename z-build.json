@@ -16,13 +16,13 @@
 		{
 			"src": "./@src/assets/",
 			"pattern": "**",
-			"dest": "../public/",
+			"dest": "./public/",
 			"watch": true
 		},
 		{
 			"src": "./@src/",
 			"pattern": "index.html",
-			"dest": "../public/",
+			"dest": "./public/",
 			"watch": true
 		}
 	],
