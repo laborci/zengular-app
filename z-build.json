@@ -11,7 +11,7 @@
 		{
 			"src": "./node_modules/@fortawesome/fontawesome-pro/webfonts/",
 			"pattern": "*",
-			"dest": "../public/fonts/fontawesome/"
+			"dest": "./public/fonts/fontawesome/"
 		},
 		{
 			"src": "./@src/assets/",
