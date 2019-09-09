@@ -1,4 +1,4 @@
-build/node_modules
-build/build-version
+node_modules
+build-version
 .idea
 public/*/**
